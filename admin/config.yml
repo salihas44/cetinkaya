@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "site"
+    label: "Site Ayarları"
+    files:
+      - name: "settings"
+        label: "Genel"
+        file: "content/site.json"
+        fields:
+          - {label: "Site Başlığı", name: "title", widget: "string"}
+          - {label: "Alt Başlık", name: "subtitle", widget: "string", required: false}
+          - {label: "Telefon", name: "phone", widget: "string"}
+          - {label: "WhatsApp", name: "whatsapp", widget: "string"}
+          - {label: "Adres", name: "address", widget: "string"}
+          - {label: "Alt Yazı", name: "footer_note", widget: "string", required: false}
+
+  - name: "products"
+    label: "Ürünler"
+    folder: "content/products"
+    create: true
+    slug: "{{id}}"
+    extension: "json"
+    summary: "{{name}} — {{price}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string"}
+      - {label: "Ad", name: "name", widget: "string"}
+      - {label: "Fiyat (TRY)", name: "price", widget: "number", value_type: "int", min: 0}
+      - {label: "Görsel Yolu", name: "img", widget: "string"}
+      - {label: "Özellikler", name: "specs", widget: "list", field: {label: "Özellik", name: "item", widget: "string"}}
+
+  - name: "products_index"
+    label: "Ürün Dizini"
+    files:
+      - name: "index"
+        label: "Liste"
+        file: "content/products/index.json"
+        fields:
+          - label: "Ürün Dosyaları"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Dosya", name: "file", widget: "string"}

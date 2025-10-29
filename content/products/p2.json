@@ -1,0 +1,11 @@
+{
+  "id": "p2",
+  "name": "Off-Road 250",
+  "price": 129000,
+  "img": "assets/img/prod2.jpg",
+  "specs": [
+    "250cc",
+    "Off-road lastik",
+    "Yüksek süspansiyon"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "p3",
+  "name": "Sport 300",
+  "price": 169000,
+  "img": "assets/img/prod3.jpg",
+  "specs": [
+    "300cc",
+    "LED far",
+    "Sport tasarım"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "p5",
+  "name": "SuperSport 660",
+  "price": 279000,
+  "img": "assets/img/prod5.jpg",
+  "specs": [
+    "660cc",
+    "Çift disk",
+    "Ride-by-wire"
+  ]
+}

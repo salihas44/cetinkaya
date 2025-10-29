@@ -1,0 +1,11 @@
+{
+  "id": "p1",
+  "name": "Supersport 1000",
+  "price": 389000,
+  "img": "assets/img/prod1.jpg",
+  "specs": [
+    "999cc",
+    "ABS",
+    "Quickshifter"
+  ]
+}
